@@ -1,16 +1,68 @@
-# React + Vite
+# 🖼️ React Gallery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive image gallery application built using **React.js, Axios, and Tailwind CSS**. The application fetches images from the Picsum Photos API and displays them in a gallery with pagination functionality.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch images dynamically using Axios.
+- Display images in a clean gallery layout.
+- Pagination with Previous and Next buttons.
+- Dynamic page navigation.
+- Reusable Card component.
+- Loading message while fetching images.
+- Responsive UI with Tailwind CSS.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** – Frontend library
+- **JavaScript (ES6+)** – Application logic
+- **Axios** – API requests
+- **Tailwind CSS** – Styling
+- **Picsum Photos API** – Image data source
+- **Vite** – Development environment
 
-## Expanding the ESLint configuration
+## 📸 API Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project uses the Picsum Photos API to fetch images.
+
+API endpoint:
+
+`https://picsum.photos/v2/list?page=1&limit=14`
+
+## 📂 Project Structure
+
+```text
+react-gallery/
+│
+├── public/
+├── src/
+│   ├── components/
+│   │   └── Card.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 📖 How It Works
+
+1. The application fetches image data from the Picsum Photos API using Axios.
+2. React's `useState` manages the image data and current page number.
+3. React's `useEffect` fetches new images whenever the page number changes.
+4. Images are displayed using a reusable Card component.
+5. Previous and Next buttons allow users to navigate between pages.
+
+## 👩‍💻 Author
+
+**Janhvi Goythale**
+
+GitHub: [Janhvi04](https://github.com/Janhvi04)
+
+---
+
+⭐ If you like this project, consider giving it a star!
